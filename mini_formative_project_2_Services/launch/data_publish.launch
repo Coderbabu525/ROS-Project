@@ -1,0 +1,6 @@
+<launch>
+
+  <param name="wheel_radius" type="double" value="0.2" />
+  <node name="robot_data_pub_node" pkg="mini_formative_project_2_Services" type="data_publisher.py" />
+  <node name="robot_data_sub_node" pkg="mini_formative_project_2_Services" type="subscriber.py" />
+</launch>

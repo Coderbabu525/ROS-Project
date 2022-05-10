@@ -1,0 +1,30 @@
+<<<< This is applicable to run all the projects coming with this folder >>>>>
+
+
+to be able to run all the projects, follow these commands below:
+
+1. Open Terminal
+2. from the home directory, type: cd
+3. type: mkdir catkin_ws
+4. type: cd catkin_ws/
+5. type: mkdir src
+6. type: catkin_make
+
+
+Then go to catkin_ws/devel/ and source the setup.bash file using command: source setup.bash
+
+
+Note: all the projects must be placed in catkin_ws/src/ directory
+
+** To create new package in the src folder, type: catkin_create_pkg pkg_name dependencies
+for example: catkin_create_pkg first_project roscpp rospy std_msgs
+
+** All the scripts will have to be in project_name/scripts folder
+
+*** to make a script executable, type: chmod +x script_name.py
+
+*** Before running any scripts, don't forget to run 'roscore' command
+
+*** Follow carefully the instructions provided in README.txt of every individual folders.
+
+IMPORTANT: some of the scripts are present in several folders. just skip them and run the appropriate scripts for that particular project

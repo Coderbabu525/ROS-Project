@@ -1,0 +1,17 @@
+<<<<<<<<<< Robot Speed >>>>>>>>
+This is a simple ROS project cosists of two nodes:
+	- Publisher (to publish RPM of Robot wheel)
+	- Subscriber (Subscribe to RPM topic and calculate Robot speed)
+
+DISCLAIMER: All the project folders must be placed in 'src' folder of catkin workspace
+
+How to Run:
+run 'roscore' command in a terminal.
+1. go to the file directory using cd command in another terminal
+2. run publisher.py using the command: python3 publisher.py
+3. run subscriber.py using the command: python3 subscriber.py in another terminal
+4. You will see the robot speed is published.
+
+*** for this project, a fixed robot wheel diameter 80m is used to calculate the speed
+
+Note: the calculated speed is published in string format in order to print in a sentence

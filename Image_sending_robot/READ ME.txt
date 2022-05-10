@@ -1,0 +1,12 @@
+<<<<<< Image sending Robot >>>>>>
+
+1. run 'roscore' on a terminal
+2. source the devel/setup.bash file in another terminal
+3. make sure all python scripts are executable.
+4. run: rosrun (project_name) turn_camera_service.py
+5. open another terminal
+6. redo step 2
+7. run: rosrun (project_name) turn_camera_client.py
+8. Enter the numeric value of angle to see the image
+
+Note: don't forget to compile using 'catkin_make' command and make all the python scripts executable

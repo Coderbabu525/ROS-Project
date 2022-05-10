@@ -1,0 +1,17 @@
+<<<<<<<<<< Robot Speed >>>>>>>>
+This is a simple ROS project cosists of two nodes:
+	- Publisher (to publish a 'hello world' message)
+	- Subscriber (Subscribe to the topic and print the message)
+
+
+How to Run:
+type 'roscore' in a terminal
+1. go to the file directory using cd command in another terminal
+2. run publisher.py using the command: python3 publisher.py
+3. run 'rosnode list' command in another terminal to see the running nodes
+4. run 'rostopic list' to see the available topic published
+5. run 'rostopic echo /hello_world'
+4. You will see the message 'hello world' is publishing continously until any interrupt.
+
+
+Note: All the projects should be under 'src' folder of catkin workspace

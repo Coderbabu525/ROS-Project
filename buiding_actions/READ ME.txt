@@ -1,0 +1,19 @@
+<<<<<< Buiding Action >>>>>>
+
+To see all ros messages: rosmsg list
+
+**make sure all the scripts are executable
+**make sure package is compiled by executing 'catkin_make' command
+
+to run the project, follow the steps:
+1. run 'roscore' on a terminal
+2. source devel/setup.bash file in a new terminal
+3. run: rosrun (project_name) action_server.py
+4. redo step 2 and then run: rosrun (project_name) robot_point_pub.py
+5. redo step 2 and then run: rosrun (project_name) action_client.py
+6. Enter the desired coordinate and current coordinate to see 
+   whether the robot point is detected or not
+7. distance must be seen if the point is detected
+8. if the distance is less than 0.35, the navigation succeesfull message should be seen with the elapsed time.
+
+

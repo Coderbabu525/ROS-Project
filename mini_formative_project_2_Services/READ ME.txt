@@ -1,0 +1,59 @@
+Warning: before running any project, make sure 'catkin_make' is run in the workspace directory to complie the project first
+And also after any change in CMakelist.txt or .srv files, execute 'catkin_make' command to recompile
+
+
+<<<<<< Parameter Server >>>>>>>>
+
+To run this project, primary commands are given below:
+
+1. List of parameters: rosparam list
+2. set a parameter: rosparam set /param_name value
+3. Read a parameter: rosparam get /param_name
+4. Writing the parameters in a yaml file: rosparam dump file_name.yaml
+5. Update parameters value: rosparam load file_name.yaml
+
+
+<<<< ROS Launch File >>>>>>>>
+The launch files helps to run a project using only a single command.
+
+To run the roslaunch command,
+1. go to the workspace directory
+2. type: roslaunch project_name
+Instead of using 'roscore' command, we can just source setup.bash file
+using the command: source devel/setup.bash
+
+this will help us to run a ROS project using 'rosrun' command
+
+step 1: all python scripts should be made executable.
+To do this, type: chmod +x *.py
+this will make all the python scripts in this directory execulatble
+
+step 2: use '#!/usr/bin/python3' at the beginning of all python scripts
+
+Then to run a single script, just type: rosrun project_name script_name.py
+
+
+<<<<<<< ROS Bag File >>>>>>>
+to record the outputs of all ros topics
+
+type: rosbag -a -O test.bag
+here, -a means to record all the topics
+      -O is used to name the bag file
+      test.bag is the file to store the recorded data
+
+to run the bag file -
+type: rosbag -l test.bag
+here, -l is used to loop back the file everytime it ends
+
+<<<< ROS service >>>>
+all the service files is in srv folder
+
+This service file is used to check a number and say Odd or Even
+
+to see all available services: rosservice list
+
+to run the project:
+1. start 'roscore' in terminal
+2. source devel/setup.bash file in a new terminal
+3. type rosrun (project_name) odd_even_client.py
+
